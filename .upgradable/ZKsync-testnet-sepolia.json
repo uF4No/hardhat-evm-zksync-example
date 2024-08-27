@@ -1,0 +1,107 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xd6cf9f4C1c5B0DFb611C8fbc23D864e72efB5F95",
+    "txHash": "0x5c22cf18e293321a3b6ad03794fd833f763fe55eb2d6804817b3309d3999b5ea"
+  },
+  "proxies": [
+    {
+      "address": "0x19C8A043FC50Ef858552400b5f3384A890A24378",
+      "txHash": "0x375098a05923d66848733a8e948b784e1efdabfe3d0de1292d1ad4636aa57ff5",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x718d2b4A6d12bde249f2598a24a5B3d9A178e7fb",
+      "txHash": "0x809393330bd931192f5001e3a4874670a9a1dc48dab8e0d5724f1f3046f860b8",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x75096fC6ee03226D2A44389F52100C4EfBeDD850",
+      "txHash": "0x8f6ac46c22777be2f855bb90f71530cdf91736e57735142a33f9d74b92a83bba",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "7175e980ee6f04b7bb006d318cb6697f76e2991cfd028db26964a370b1a9db57": {
+      "address": "0x5C35B9bfCfA69d274500BA85fBb7FA7B936cBD50",
+      "txHash": "0x6473441e04b321c934d7953bc62ee44b78d6945631ee0e749074bc0f6f2947f4",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "owner",
+            "offset": 2,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "CrowdfundingCampaign",
+            "src": "contracts/CrowdfundingCampaign.sol:7"
+          },
+          {
+            "label": "fundingGoal",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "CrowdfundingCampaign",
+            "src": "contracts/CrowdfundingCampaign.sol:8"
+          },
+          {
+            "label": "totalFundsRaised",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "CrowdfundingCampaign",
+            "src": "contracts/CrowdfundingCampaign.sol:9"
+          },
+          {
+            "label": "contributions",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "CrowdfundingCampaign",
+            "src": "contracts/CrowdfundingCampaign.sol:10"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}

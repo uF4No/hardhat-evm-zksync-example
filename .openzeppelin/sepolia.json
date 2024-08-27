@@ -1,0 +1,117 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xAa4401AAAa9b757478f9Bc6B8d70AF58a6aDE966",
+    "txHash": "0xd83204f6debe411fd6ae2c51332f381c83a5a0efdf8a836c97c0fc353e05e24a"
+  },
+  "proxies": [
+    {
+      "address": "0x520cb7862fe5F3AB680C9b3413836B94c12428b0",
+      "txHash": "0x6b43f19c9fccaca1f57b4d90d3ed44a0b8bef42275296600931fede49171d1d2",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x86d0b8e1D0df1ac708Fa43dF8FCD6D1d745B7bC0",
+      "txHash": "0x60cc85d93e530cad07ff001d7b83e340a3b6bcdbd204aaed1bde651e001d0515",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xc9319733A7FeFA6d50D6608E75F9f5Dba1f6f6AB",
+      "txHash": "0x0709e23c7657be0dc8dfccaad69aef17289cafa200c1eb0b74e0b8b29024aa3b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x7e5B1fAA71c8B6Af65B6379681A06a2eB69E96E3",
+      "txHash": "0xdd709d90d22eb72570bc90bcf161cdd65627ced9342237ae96293838648ea38a",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xc53F9Cd2f689D6dAED8C8677fd3CE2a6C1743A1f",
+      "txHash": "0x07b0a2b819747a019c589a4ce6f4f8f0a073844e5142281e470dd93bab89c687",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "88800f94a1c232ca0334824ab15c1bfec41b8612b7ce195410318a16322e744f": {
+      "address": "0xAf78B44C3b054b22F83a520597336c37E51FD68d",
+      "txHash": "0x98968acca3ef7d8a8f2547e08253510d6134e2910f0bb232e73d63af1989b19f",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "owner",
+            "offset": 2,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "CrowdfundingCampaign",
+            "src": "contracts/CrowdfundingCampaign.sol:7"
+          },
+          {
+            "label": "fundingGoal",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "CrowdfundingCampaign",
+            "src": "contracts/CrowdfundingCampaign.sol:8"
+          },
+          {
+            "label": "totalFundsRaised",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "CrowdfundingCampaign",
+            "src": "contracts/CrowdfundingCampaign.sol:9"
+          },
+          {
+            "label": "contributions",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "CrowdfundingCampaign",
+            "src": "contracts/CrowdfundingCampaign.sol:10"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}
