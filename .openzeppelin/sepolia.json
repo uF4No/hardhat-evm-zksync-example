@@ -29,6 +29,16 @@
       "address": "0xc53F9Cd2f689D6dAED8C8677fd3CE2a6C1743A1f",
       "txHash": "0x07b0a2b819747a019c589a4ce6f4f8f0a073844e5142281e470dd93bab89c687",
       "kind": "transparent"
+    },
+    {
+      "address": "0x4799284b3554050b601E5ac0868760783d675b13",
+      "txHash": "0x9dd0c84b95b52e58a6d3380e83950218f67deffc8becfc4c992882048b9bd1ea",
+      "kind": "uups"
+    },
+    {
+      "address": "0xDBDd8EFF250bc7Fe84bD59517029dA13115e7c4D",
+      "txHash": "0xc085b9a325507c9ef389c18e5298a9c249b37018f189c427e069ff0853eff737",
+      "kind": "uups"
     }
   ],
   "impls": {
@@ -86,6 +96,208 @@
             "type": "t_mapping(t_address,t_uint256)",
             "contract": "CrowdfundingCampaign",
             "src": "contracts/CrowdfundingCampaign.sol:10"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "b8a858f40b9719b31e9cf93626dbb7934a3423ca4346ff07f857d85222103b8f": {
+      "address": "0x06F3765b7cCB9D09be54fD3b60512ba876B9F8a3",
+      "txHash": "0x3a3723a1b90d623b4c4401d3099ef761e91dac4aa121d63873c5b62c5c7dbb76",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:169"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:111"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:40"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "fundingGoal",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_uint256",
+            "contract": "UUPS",
+            "src": "contracts/UUPS.sol:11"
+          },
+          {
+            "label": "totalFundsRaised",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_uint256",
+            "contract": "UUPS",
+            "src": "contracts/UUPS.sol:12"
+          },
+          {
+            "label": "contributions",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "UUPS",
+            "src": "contracts/UUPS.sol:13"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "6786b1d452c18786a7f671f6b907fbfd71e69cfb78fd7bfeffb2ad4f1e528fd9": {
+      "address": "0x7aD67b6fA61d3134c5096B4fcd2e9b2663cdbd38",
+      "txHash": "0x430bc4da2c0f7ec4a3841a2c46ad1eceed7616e3fc10bdf559fd08fe965fc0ce",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "owner",
+            "offset": 2,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "Beacon",
+            "src": "contracts/Beacon.sol:9"
+          },
+          {
+            "label": "fundingGoal",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "Beacon",
+            "src": "contracts/Beacon.sol:10"
+          },
+          {
+            "label": "totalFundsRaised",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "Beacon",
+            "src": "contracts/Beacon.sol:11"
+          },
+          {
+            "label": "contributions",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "Beacon",
+            "src": "contracts/Beacon.sol:12"
           }
         ],
         "types": {

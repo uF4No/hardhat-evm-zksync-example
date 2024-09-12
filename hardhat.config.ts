@@ -27,8 +27,11 @@ const config: HardhatUserConfig = {
     settings:{
     }
   },
+  defaultNetwork: "hardhat",
   networks: {
-    hardhat: {},
+    hardhat: {
+      zksync: true
+    },
     sepolia:{
       url: "https://ethereum-sepolia-rpc.publicnode.com",
       accounts:[process.env.DEPLOYER as any],
