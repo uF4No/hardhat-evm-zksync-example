@@ -5,7 +5,7 @@ import { DeployFunction } from "hardhat-deploy/types";
 const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) { 
   console.log(`Deploying basic contract with hardhat-deploy to ${hre.network.name}`);
   
-  const { deployments, getNamedAccounts } = hre; 
+  const { deployments, getNamedAccounts, } = hre; 
   const { deploy } = deployments; 
  /* 
   The deploy function uses the hardhat-deploy named accounts feature 

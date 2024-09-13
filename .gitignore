@@ -1,9 +1,17 @@
 node_modules
 .env
 
+
+
 # Hardhat files
 /cache
 /artifacts
+/cache-zk
+/artifacts-zk
+
+# Proxy cache
+.openzeppelin
+.upgradable
 
 # TypeChain files
 /typechain

@@ -1,14 +1,10 @@
 
-// import { ethers } from "ethers";
-
 async function main() {
   console.log(`Deploying beacon proxy contract to ${hre.network.name}`);
   const proxyFactory = await hre.ethers.getContractFactory("Beacon");
   const initializerFunctionName = 'initialize'
   const fundingGoalInWei = hre.ethers.parseEther('0.1').toString();
-  const campaignContract = await hre.upgrades.deployBeacon(proxyFactory, [fundingGoalInWei], {
-    initializer: initializerFunctionName,
-  });
+  const campaignContract = await hre.upgrades.deployBeacon(proxyFactory, [fundingGoalInWei]);
   await campaignContract.waitForDeployment();
 
   const contractAddress = await campaignContract.getAddress();

@@ -3,19 +3,24 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/proxy/utils/Initializable.sol";
 
-contract CrowdfundingCampaign2 is Initializable {
+// The proxyable contract implements the Initializable interface from OpenZeppelin
+contract Transparent is Initializable {
     address public owner;
-    uint256 public fundingGoal;
-    uint256 public totalFundsRaised;
-    mapping(address => uint256) public contributions;
+    uint256 private fundingGoal;
+    uint256 private totalFundsRaised;
+    mapping(address => uint256) private contributions;
 
     event ContributionReceived(address contributor, uint256 amount);
     event GoalReached(uint256 totalFundsRaised);
+    event Deployed(address owner);
 
-    // Remove constructor in favour of initialize method
+    // Proxy'd contract do not use a constructor
+    // They implement the `initialize` function instead from OpenZeppelin's Initializable
+    // The rest of the logic for the contract stays the same!
     function initialize(uint256 _fundingGoal) public initializer {
         owner = msg.sender;
         fundingGoal = _fundingGoal;
+        emit Deployed(owner);
     }
 
     function contribute() public payable {

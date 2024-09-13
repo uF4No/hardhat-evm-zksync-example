@@ -1,13 +1,17 @@
-# Sample Hardhat Project
+# Hardhat EVM-ZKsync example project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This is a sample project showcasing different contracts and scripts to deploy them to both Sepolia (or other EVM equivalent chain) and ZKsync Era reusing the same scripts.
 
-Try running some of the following tasks:
+## Tests
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+|----|----|----|
+| Type | EVM | ZKsync |
+|----|----|----|
+|Basic contract, hardhat-ethers| ✅ |✅ |
+|Basic contract, hardhat-deploy| ✅ |✅ |
+|Transparent proxy, hardhat-ethers| ✅ |✅ |
+|Transparent proxy upgrade, hardhat-ethers| ✅ | ✅ |
+|Beacon proxy, hardhat-ethers| ✅ | ✅ |
+|Beacon proxy upgrade, hardhat-ethers| ✅ | ✅ |
+|UUPS proxy, hardhat-ethers| ✅ |✅ |
+|UUPS proxy upgrade, hardhat-ethers| ✅ |✅ |
