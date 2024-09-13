@@ -1,4 +1,3 @@
-// scripts/hh-ethers-deploy.js
 
 async function main() {
   console.log(`Deploying basic contract to ${hre.network.name}`);
